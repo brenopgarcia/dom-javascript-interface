@@ -1,0 +1,144 @@
+* {
+  font-family: monospace;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 0 0 20px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+#page-banner {
+  background: #eee;
+  padding: 10px 0;
+}
+
+#page-banner h1,
+#page-banner p {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#page-banner input {
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #444;
+}
+
+#book-list,
+#add-book,
+#tabbed-content {
+  margin: 30px;
+}
+
+#book-list ul,
+#tabbed-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#book-list li {
+  padding: 20px;
+  border-left: 5px solid #ddd;
+  margin: 20px 10px;
+}
+
+#book-list li:hover {
+  border-color: #9361bf;
+}
+
+.delete {
+  float: right;
+  background: #9361bf;
+  padding: 6px;
+  border-radius: 4px;
+  color: #eee;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span.delete:hover {
+  background: red;
+  color: #eee;
+}
+
+#add-book input {
+  width: 78%;
+  height: 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+#add-book button {
+  width: 18%;
+  border-radius: 4px;
+  height: 40px;
+  color: #eee;
+  background: #9361bf;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#add-book button:hover {
+  background: #5ed96b;
+  color: #eee;
+}
+
+button {
+  cursor: pointer;
+}
+
+#add-book:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#add-book #hide {
+  width: 10px;
+  vertical-align: middle;
+}
+
+#add-book label {
+  line-height: 52px;
+  vertical-align: middle;
+}
+
+#tabbed-content li {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#tabbed-content .panel {
+  display: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+#tabbed-content .panel.active {
+  display: block;
+}
