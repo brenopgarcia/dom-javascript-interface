@@ -25,11 +25,11 @@ addForm.addEventListener("submit", e => {
   bookName.classList.add("name");
 
   //Combining elements - appending to document
-  if (newBook != "") {
+  if (newBook) {
     li.appendChild(bookName);
     li.appendChild(deleteButton);
-
     list.appendChild(li);
+    addForm.querySelector('input[type="text"]').value = "";
   }
 });
 
